@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio | Tienda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú lateral -->
+            <div class="col-md-3 col-lg-2 sidebar bg-dark text-white p-3">
+                <h4 class="text-center">Categorías</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Muebles</a></li>
+                    <li><a href="#" class="text-white">Sofás y Sillones</a></li>
+                    <li><a href="#" class="text-white">Decoración</a></li>
+                    <li><a href="#" class="text-white">Camas y Ropa de cama</a></li>
+                    <li><a href="#" class="text-white">Lámparas</a></li>
+                    <li><a href="#" class="text-white">Alfombras</a></li>
+                    <li><a href="#" class="text-white">Textil</a></li>
+                    <li><a href="#" class="text-white">Kids</a></li>
+                    <li><a href="#" class="text-white">Menaje de mesa</a></li>
+                    <li><a href="#" class="text-white">Cuarto de baño</a></li>
+                    <li><a href="#" class="text-white">Mascotas</a></li>
+                </ul>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col-md-9 col-lg-10">
+                <!-- Enlace de Iniciar sesión en la parte superior derecha -->
+                <div class="login-link text-end">
+                    <a href="/login" class="continue-button">Iniciar sesión</a>
+                </div>
+
+                <!-- Sección de bienvenida -->
+                <div class="welcome-container text-center">
+                    <h1 class="welcome-title">Bienvenido a la tienda</h1>
+                    <div class="welcome-line"></div>
+                    <p class="welcome-message">Explora nuestros productos y realiza tus compras de manera fácil y segura.</p>
+                </div>
+
+                <!-- Productos destacados -->
+                <div class="products-section">
+                    <h2>Productos Destacados</h2>
+                    <div class="row">
+                        <!-- Producto 1 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Sofá Moderno</h3>
+                                    <p>Un sofá elegante y cómodo para tu sala de estar. Disponible en varios colores y tamaños.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Lámpara de Mesa</h3>
+                                    <p>Lámpara moderna con base de metal y pantalla de tela. Ideal para decorar tu espacio de trabajo o sala.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Alfombra Estilo Vintage</h3>
+                                    <p>Alfombra suave de alta calidad con un diseño retro que le dará un toque único a tu hogar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Espejo Decorativo</h3>
+                                    <p>Un espejo elegante con un marco de madera que complementará cualquier habitación con estilo.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 5 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Cama King Size</h3>
+                                    <p>Cama grande y cómoda con colchón de alta calidad para un descanso perfecto.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="featured-product">
+                                <div class="product-info">
+                                    <h3>Silla Ergonómica</h3>
+                                    <p>Silla de oficina ergonómica con respaldo ajustable y diseño moderno para mayor comodidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Título de bienvenida */
+.welcome-title {
+    text-align: center;  /* Centra el texto */
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Separación entre el título y la línea */
+}
+
+.welcome-line {
+    width: 50%; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: #3f87a6; /* Color de la línea */
+    margin: 0 auto; /* Centra la línea */
+}
+
+/* Contenedor del formulario de login */
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px; /* Espacio entre la línea y el formulario */
+}
+
+/* Título del formulario */
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: lowercase; /* Convertir todo el texto a minúsculas */
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Reseteamos márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #3f87a6, #ebf8e1); /* Gradiente de colores */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Esto asegura que el formulario se alinee a la parte superior */
+    align-items: center;
+    flex-direction: column; /* Establece la dirección de la columna para que los elementos se apilen */
+    padding-top: 50px; /* Espacio para asegurarnos de que esté separado del borde superior */
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto de foco en los campos de entrada */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3f87a6;
+    outline: none;
+}
+
+/* Estilo para el botón de login */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #3f87a6;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #315e72;
+}
+
+button:active {
+    background-color: #2a4c5b;
+}
+
+/* Enlace para la redirección de "¿Olvidaste tu contraseña?" */
+a {
+    font-size: 14px;
+    color: #3f87a6;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Animación del contenedor */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease-out;
+}

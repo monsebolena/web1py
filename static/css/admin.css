@@ -1,0 +1,84 @@
+/* Reseteamos márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #3f87a6, #ebf8e1); /* Gradiente de colores */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.admin-container {
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease-out; /* Animación de fadeIn */
+}
+
+/* Título de la vista Admin */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para el párrafo */
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para el botón de Cerrar sesión */
+button {
+    width: 200px;
+    padding: 15px;
+    border: none;
+    background-color: #3f87a6;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #315e72;
+}
+
+button:active {
+    background-color: #2a4c5b;
+}
+
+/* Animación de FadeIn para el contenedor */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
